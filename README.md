@@ -13,7 +13,7 @@ PiGLyは体重管理をサポートするアプリケーションです。ユー
 
 ## 環境構築
 **Dockerビルド**
-1. `git clone 
+1. `git clone git@github.com:H1g4s4/Pigly.git`
 2. DockerDesktopアプリを立ち上げる
 3. `docker-compose up -d --build`
 
@@ -49,7 +49,7 @@ php artisan db:seedphp artisan storage:link
 
 - **PHP**:8.83.8
 - **Laravel**:7.4.9
-- **MySQL**:
+- **MySQL**:10.3.39
 
 ## テーブル設計
 <img width="621" alt="スクリーンショット 2024-12-09 21 55 31" src="https://github.com/user-attachments/assets/8ad65635-ac3d-4e45-b272-94300e36c098">
