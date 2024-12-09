@@ -1,0 +1,117 @@
+/* goal-weight-setting.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.weight-management-card {
+    background-color: white;
+    padding: 30px 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #030002;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
+
+/* ボタンを横並びにするためのスタイル */
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+    background: linear-gradient(to right, #ccd5f6, #f58eca, #f5c0d7);
+    color: white;
+    border: none;
+}
+
+button[type="button"] {
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+}
+
+/* 横並びで表示させるためのスタイル */
+button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+form button {
+    width: 48%;
+}
+
+button:hover {
+    background-color: #a86da0;
+}
+
+button[type="button"]:hover {
+    background-color: #d1d1d1;
+}
+
+/* 画面のレイアウト改善 */
+.weight-management-card button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* 画面サイズ調整 */
+@media (max-width: 600px) {
+    .weight-management-card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    form button {
+        width: 48%;
+    }
+}
